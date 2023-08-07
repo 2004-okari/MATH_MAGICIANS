@@ -37,14 +37,16 @@ My Math magicians project in Microverse.
 
 ### Tech Stack <a name="tech-stack"></a>
 
--React
--Webpack
--Jest
+- React
+- Webpack
+- Jest
 
 
 ### Key Features <a name="key-features"></a>
 
- Not available yet ...
+ 1. Setup with create React app
+ 2. It has a built in calculator
+ 3. It fetches quotes from an eternal API
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -94,12 +96,12 @@ Will deploy the project using netlify.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-Project 1: Setup.
-Project 2: Components.
-Project 3: Events.
-Project 4: Fetch data from API.
-Project 5: Full website.
-Project 6: Tests (pair programming).
+- Project 1: Setup.
+- Project 2: Components.
+- Project 3: Events.
+- Project 4: Fetch data from API.
+- Project 5: Full website.
+- Project 6: Tests (pair programming).
 Exercise: Deploy.
 
 
