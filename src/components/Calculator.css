@@ -1,4 +1,5 @@
 .calculator {
+  max-width: 520px;
   display: grid;
   grid-template-areas:
     "screen screen screen screen"
