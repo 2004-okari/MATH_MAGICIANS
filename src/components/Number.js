@@ -2,7 +2,7 @@ function Number() {
   return (
     <div className="numbers">
       <button type="button" className="button">AC</button>
-      <button type="button" className="button">+/*</button>
+      <button type="button" className="button">+/-</button>
       <button type="button" className="button">%</button>
       <button type="button" className="button">7</button>
       <button type="button" className="button">8</button>

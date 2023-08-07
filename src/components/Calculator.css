@@ -23,14 +23,23 @@
     grid-template-columns: repeat(3, 1fr);
     background-color: #e0e0e0;
 
-    &:nth-child(13) {
+    :nth-child(13) {
       grid-column: span 2;
     }
 
     .button {
+      font-size: 20px;
+      font-weight: 600;
       text-align: center;
       border: 1px solid #bababa;
       padding: 1rem;
+      &:hover {
+        background-color: #9BABB8;
+        color: #000;
+      }
+      &:active {
+        background-color: #17594A;
+      }
     }
   }
 
@@ -38,12 +47,21 @@
     grid-area: operator;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    background-color: #f4913e;
-
+    
     .button {
+      font-size: 20px;
+      font-weight: 600;
+      background-color: #f4913e;
       text-align: center;
       border: 1px solid #bababa;
       padding: 1rem;
+      &:hover {
+        background-color: #F3AA60;
+        color: #000;
+      }
+      &:active {
+        background-color: #17594A;
+      }
     }
   }
 }
