@@ -1,7 +1,13 @@
-function Screen() {
+import PropTypes from 'prop-types';
+
+function Screen({ displayValue }) {
   return (
-    <div className="screen">0</div>
+    <div className="screen">{displayValue}</div>
   );
 }
+
+Screen.propTypes = {
+  displayValue: PropTypes.string.isRequired,
+};
 
 export default Screen;
