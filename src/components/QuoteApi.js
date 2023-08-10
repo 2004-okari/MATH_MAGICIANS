@@ -18,7 +18,6 @@ function Quote() {
         const data = await response.json();
         setQuote(data);
       } catch (error) {
-        console.error('Error fetching data', error);
         setError(true);
       }
       setIsLoading(false);
@@ -28,7 +27,7 @@ function Quote() {
 
     // Clean up when component unmounts
     return () => {
-      console.log('Quote Clean up!');
+      setIsLoading(false);
     };
   }, []);
 
@@ -37,13 +36,13 @@ function Quote() {
   if (errorPresent) return <div>Sorry, Try again!</div>;
 
   return (
-    <div className="quoteSec">
+    <ul className="quoteSec">
       {quotes.map((quote) => (
-        <div className="quote" key={quote.id}>
+        <li className="quote" key={quote.id}>
           {quote.quote}
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
