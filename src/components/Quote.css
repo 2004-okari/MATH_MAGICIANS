@@ -1,7 +1,7 @@
 .quoteSec {
   border-radius: 6px;
   width: 80%;
-  background-color: #D8D9DA;
+  background-color: #d8d9da;
   text-align: center;
   padding: 10px;
   margin: 0 auto;
@@ -9,5 +9,5 @@
   font-size: 24px;
   margin-top: 10%;
   margin-bottom: 30px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
 }
