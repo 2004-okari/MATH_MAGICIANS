@@ -1,71 +1,97 @@
-.calculator {
-  max-width: 520px;
-  display: grid;
-  grid-template-areas:
-    "screen screen screen screen"
-    "numbers numbers numbers operator"
-    "numbers numbers numbers operator"
-    "numbers numbers numbers operator"
-    "numbers numbers numbers operator"
-    "numbers numbers numbers operator";
+.calculator-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8d9da;
+  width: 94%;
+  margin: 30px auto 0 auto;
+  padding: 24px 0;
+  border-radius: 6px;
 
-  .screen {
-    grid-area: screen;
-    color: #fff;
-    font-size: 2rem;
-    text-align: right;
-    padding: 1rem 0.5rem;
-    background-color: #858693;
+  .calc-text {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 auto 20px auto;
   }
 
-  .operator {
-    grid-area: operator;
+  .calculator {
+    max-width: 800px;
+    width: 96%;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+    grid-template-areas:
+      "screen screen screen screen"
+      "numbers numbers numbers operator"
+      "numbers numbers numbers operator"
+      "numbers numbers numbers operator"
+      "numbers numbers numbers operator"
+      "numbers numbers numbers operator";
 
-    .button {
-      font-size: 20px;
-      font-weight: 600;
-      background-color: #f4913e;
-      text-align: center;
-      border: 1px solid #bababa;
-      padding: 1rem;
-
-      &:hover {
-        background-color: #f3aa60;
-        color: #000;
-      }
-
-      &:active {
-        background-color: #17594a;
-      }
-    }
-  }
-
-  .numbers {
-    grid-area: numbers;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: #e0e0e0;
-
-    :nth-child(13) {
-      grid-column: span 2;
+    .screen {
+      border-radius: 6px;
+      grid-area: screen;
+      color: #fff;
+      font-size: 2rem;
+      text-align: right;
+      padding: 1rem 0.5rem;
+      background-color: #858693;
     }
 
-    .number {
-      font-size: 20px;
-      font-weight: 600;
-      text-align: center;
-      border: 1px solid #bababa;
-      padding: 1rem;
+    .operator {
+      grid-area: operator;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 3px;
 
-      &:hover {
-        background-color: #9babb8;
-        color: #000;
+      .button {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #f4913e;
+        text-align: center;
+        border: 1px solid #bababa;
+        padding: 1rem;
+        border-radius: 6px;
+
+        &:hover {
+          background-color: #f3aa60;
+          color: #000;
+        }
+
+        &:active {
+          background-color: #17594a;
+        }
+      }
+    }
+
+    .numbers {
+      grid-area: numbers;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background-color: #e0e0e0;
+      gap: 3px;
+
+      :nth-child(13) {
+        grid-column: span 2;
       }
 
-      &:active {
-        background-color: #17594a;
+      .number {
+        border-radius: 6px;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        border: 1px solid #bababa;
+        padding: 1rem;
+
+        &:hover {
+          background-color: #9babb8;
+          color: #000;
+        }
+
+        &:active {
+          background-color: #17594a;
+        }
       }
     }
   }

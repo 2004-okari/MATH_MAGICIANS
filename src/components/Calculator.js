@@ -23,11 +23,21 @@ function Calculator() {
   const displayValue = next || operation || total || 0;
 
   return (
-    <div className="calculator">
-      <Screen displayValue={displayValue} />
-      <Number clickHandle={clickHandle} />
-      <Operand clickHandle={clickHandle} />
-    </div>
+    <>
+      <div className="calculator-div">
+
+        <div className="calc-text">
+          <p>
+            Let&apos;s do some math!
+          </p>
+        </div>
+        <div className="calculator">
+          <Screen displayValue={displayValue} />
+          <Number clickHandle={clickHandle} />
+          <Operand clickHandle={clickHandle} />
+        </div>
+      </div>
+    </>
   );
 }
 
