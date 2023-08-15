@@ -1,6 +1,6 @@
 import './App.css';
 import {
-  Routes, Route, Outlet, Link,
+  Routes, Route, Link,
 } from 'react-router-dom';
 import Quote from './components/QuoteApi';
 import Calculator from './components/Calculator';
@@ -10,12 +10,12 @@ function App() {
   return (
 
     <>
-      <nav className='navbar'>
-        <h2 className='nav-text'>Math Magicians</h2>
-        <ul className='list-cover'>
-          <li className='list'><Link className='link-tag' to="/">Home</Link></li>
-          <li className='list'><Link className='link-tag' to="/calculator">Calculator</Link></li>
-          <li className='list'><Link className='link-tag' to="/quotes">Quote</Link></li>
+      <nav className="navbar">
+        <h2 className="nav-text">Math Magicians</h2>
+        <ul className="list-cover">
+          <li className="list"><Link className="link-tag" to="/">Home</Link></li>
+          <li className="list"><Link className="link-tag" to="/calculator">Calculator</Link></li>
+          <li className="list"><Link className="link-tag" to="/quotes">Quote</Link></li>
         </ul>
       </nav>
       <Routes>

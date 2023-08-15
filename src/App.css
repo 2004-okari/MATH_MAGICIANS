@@ -43,6 +43,18 @@
 
       .link-tag {
         text-decoration: none;
+
+        &:hover {
+          color: #1d5b79;
+        }
+
+        &:active {
+          color: burlywood;
+        }
+
+        &:focus {
+          color: #ef6262;
+        }
       }
     }
   }

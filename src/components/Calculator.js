@@ -24,19 +24,19 @@ function Calculator() {
 
   return (
     <>
-    <div className='calculator-div'>
+      <div className="calculator-div">
 
-      <div className="calc-text">
-        <p>
-          Let&apos;s do some math!
-        </p>
+        <div className="calc-text">
+          <p>
+            Let&apos;s do some math!
+          </p>
+        </div>
+        <div className="calculator">
+          <Screen displayValue={displayValue} />
+          <Number clickHandle={clickHandle} />
+          <Operand clickHandle={clickHandle} />
+        </div>
       </div>
-      <div className="calculator">
-        <Screen displayValue={displayValue} />
-        <Number clickHandle={clickHandle} />
-        <Operand clickHandle={clickHandle} />
-      </div>
-    </div>
     </>
   );
 }
