@@ -24,6 +24,8 @@ function Calculator() {
 
   return (
     <>
+    <div className='calculator-div'>
+
       <div className="calc-text">
         <p>
           Let&apos;s do some math!
@@ -34,6 +36,7 @@ function Calculator() {
         <Number clickHandle={clickHandle} />
         <Operand clickHandle={clickHandle} />
       </div>
+    </div>
     </>
   );
 }

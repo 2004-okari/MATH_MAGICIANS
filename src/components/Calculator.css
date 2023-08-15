@@ -1,72 +1,86 @@
-.calculator {
-  max-width: 520px;
+.calculator-div {
   display: grid;
-  grid-template-areas:
+  grid-template-columns: repeat(auto-fit, minmax(347px, 1fr));
+
+  .calc-text {
+    font-size: 32px;
+    font-weight: 600;
+    width: 92%;
+    margin: 0 auto 10px auto;
+  }
+  .calculator {
+    max-width: 600px;
+    width: 92%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
     "screen screen screen screen"
     "numbers numbers numbers operator"
     "numbers numbers numbers operator"
     "numbers numbers numbers operator"
     "numbers numbers numbers operator"
     "numbers numbers numbers operator";
-
-  .screen {
-    grid-area: screen;
-    color: #fff;
-    font-size: 2rem;
-    text-align: right;
-    padding: 1rem 0.5rem;
-    background-color: #858693;
-  }
-
-  .operator {
-    grid-area: operator;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-
-    .button {
-      font-size: 20px;
-      font-weight: 600;
-      background-color: #f4913e;
-      text-align: center;
-      border: 1px solid #bababa;
-      padding: 1rem;
-
-      &:hover {
-        background-color: #f3aa60;
-        color: #000;
-      }
-
-      &:active {
-        background-color: #17594a;
+    
+    .screen {
+      grid-area: screen;
+      color: #fff;
+      font-size: 2rem;
+      text-align: right;
+      padding: 1rem 0.5rem;
+      background-color: #858693;
+    }
+    
+    .operator {
+      grid-area: operator;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      
+      .button {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #f4913e;
+        text-align: center;
+        border: 1px solid #bababa;
+        padding: 1rem;
+        
+        &:hover {
+          background-color: #f3aa60;
+          color: #000;
+        }
+        
+        &:active {
+          background-color: #17594a;
+        }
       }
     }
-  }
-
-  .numbers {
-    grid-area: numbers;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: #e0e0e0;
-
-    :nth-child(13) {
-      grid-column: span 2;
-    }
-
-    .number {
-      font-size: 20px;
-      font-weight: 600;
-      text-align: center;
-      border: 1px solid #bababa;
-      padding: 1rem;
-
-      &:hover {
-        background-color: #9babb8;
-        color: #000;
+    
+    .numbers {
+      grid-area: numbers;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background-color: #e0e0e0;
+      
+      :nth-child(13) {
+        grid-column: span 2;
       }
-
-      &:active {
-        background-color: #17594a;
+      
+      .number {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        border: 1px solid #bababa;
+        padding: 1rem;
+        
+        &:hover {
+          background-color: #9babb8;
+          color: #000;
+        }
+        
+        &:active {
+          background-color: #17594a;
+        }
       }
     }
   }
 }
+  

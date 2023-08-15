@@ -23,8 +23,6 @@ function App() {
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/quotes" element={<Quote />} />
       </Routes>
-      {/* <Calculator />
-      <Quote /> */}
     </>
   );
 }

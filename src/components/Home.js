@@ -1,6 +1,9 @@
+import './Home.css'
+
 function HomePage() {
   return (
     <>
+    <div className="home-page">
       <h1 className="welcome-text">Welcome to our Page!</h1>
       <div className="description-div">
         <p className="description-text">
@@ -17,6 +20,7 @@ function HomePage() {
           come out; they are in fault who abandon their
           duty, and the soul is softened, that is toil. Him
           <br />
+          <br />
           It is important to take care of the pain itself, and it
           will be followed by
           the growth of the patient, but at the same time it
@@ -30,6 +34,7 @@ function HomePage() {
           hearts, that is, their labors. Him
         </p>
       </div>
+    </div>
     </>
   );
 }
