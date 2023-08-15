@@ -1,18 +1,26 @@
 .calculator-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(347px, 1fr));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #D8D9DA;
+  width: 94%;
+  margin: 20px auto 0 auto;
+  padding: 24px 0;
+  border-radius: 6px;
 
   .calc-text {
+    text-align: center;
     font-size: 32px;
     font-weight: 600;
-    width: 92%;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 20px auto;
   }
   .calculator {
-    max-width: 600px;
-    width: 92%;
-    margin: 0 auto;
+    max-width: 800px;
+    width: 96%;
     display: grid;
+    gap: 8px;
     grid-template-areas:
     "screen screen screen screen"
     "numbers numbers numbers operator"
@@ -22,6 +30,7 @@
     "numbers numbers numbers operator";
     
     .screen {
+      border-radius: 6px;
       grid-area: screen;
       color: #fff;
       font-size: 2rem;
@@ -34,6 +43,7 @@
       grid-area: operator;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
+      gap: 3px;
       
       .button {
         font-size: 20px;
@@ -42,6 +52,7 @@
         text-align: center;
         border: 1px solid #bababa;
         padding: 1rem;
+        border-radius: 6px;
         
         &:hover {
           background-color: #f3aa60;
@@ -59,12 +70,14 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       background-color: #e0e0e0;
+      gap: 3px;
       
       :nth-child(13) {
         grid-column: span 2;
       }
       
       .number {
+        border-radius: 6px;
         font-size: 20px;
         font-weight: 600;
         text-align: center;

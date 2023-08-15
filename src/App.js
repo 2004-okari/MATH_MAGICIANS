@@ -10,12 +10,12 @@ function App() {
   return (
 
     <>
-      <nav>
-        <h2>Math Magicians</h2>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/calculator">Calculator</Link></li>
-          <li><Link to="/quotes">Quote</Link></li>
+      <nav className='navbar'>
+        <h2 className='nav-text'>Math Magicians</h2>
+        <ul className='list-cover'>
+          <li className='list'><Link className='link-tag' to="/">Home</Link></li>
+          <li className='list'><Link className='link-tag' to="/calculator">Calculator</Link></li>
+          <li className='list'><Link className='link-tag' to="/quotes">Quote</Link></li>
         </ul>
       </nav>
       <Routes>
